@@ -6,3 +6,5 @@ All the data is saved in localStorage. You can input your income or expenses,
 separate them to different categories and then watch a per month charts with
 all your income and expenses.
 
+
+Used technologies: React, Redux, React-Router, Bootstrap, SASS, React-datepicker, Moment, Recharts.
