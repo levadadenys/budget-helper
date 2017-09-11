@@ -10,21 +10,21 @@ const INCOME_COLORS = [
   '#4286f4',
   '#40c977',
   '#9de256',
-  '#24BC91',
-  '#67afbc',
-  '#26bc72',
-  '#65bc49',
-  '#36bc09'];
+  '#30fec4',
+  '#5ea0ac',
+  '#37b55e',
+  '#335d0c',
+  '#45f10c'];
 
 const EXPENSES_COLORS = [
-  '#f44346',
-  '#c9782e',
-  '#e28e13',
-  '#bc354d',
+  '#ff4649',
+  '#c2732b',
+  '#f99c15',
+  '#a72f44',
   '#bc261b',
-  '#bc4a15',
-  '#bc5b61',
-  '#bc7451'
+  '#a44112',
+  '#fd7a83',
+  '#f5936d'
 ];
 
 class ChartsPage extends React.Component {

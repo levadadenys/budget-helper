@@ -6,7 +6,7 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Cell,
+  Legend,
   ResponsiveContainer
 } from 'recharts';
 import moment from 'moment';
@@ -79,6 +79,7 @@ class IncomeAndExpensesChart extends React.Component {
 
   render () {
     const DATA = this.state.chartsData;
+    let colors = this.props.colors.slice();
     return (
       <div className='col-md-10 col-md-offset-1' style={{'height': 'initial'}}>
         <h4 className={this.props.titleClassName}>
@@ -90,16 +91,14 @@ class IncomeAndExpensesChart extends React.Component {
             <YAxis />
             <CartesianGrid strokeDasharray="4 4" />
             <Tooltip />
+            <Legend />
             {
               this.props.categories.map(category =>
                 <Bar dataKey={category.name} stackId={this.props.title}
-                     key={category.id}>
-                  {
-                    DATA.map((cell, i) => <Cell key={`cell-${i}`}
-                                                fill={this.props.colors[Math.floor(Math.random() *
-                                                  this.props.colors.length)]} />)
-                  }
-                </Bar>
+                     key={category.id} fill={colors.length
+                  ? colors.pop()
+                  : this.props.colors[Math.floor(Math.random() *
+                    this.props.colors.length)]} />
               )
             }
           </BarChart>
