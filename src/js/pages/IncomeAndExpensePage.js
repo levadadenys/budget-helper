@@ -2,11 +2,11 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as appActions from './../actions/appActions';
-import ContainerFluid from '../components/bootstrapComponents/ContainerFluid';
-import Sidebar from '../components/Sidebar';
-import ModalToggleButton from '../modals/ModalToggleButton';
-import IncomeAndExpensesModal from '../modals/IncomeAndExpensesModal';
-import IncomeAndExpensesList from '../components/list/IncomeAndExpensesList';
+import ContainerFluid from './../components/bootstrapComponents/ContainerFluid';
+import Sidebar from './../components/Sidebar';
+import ModalToggleButton from './../modals/ModalToggleButton';
+import IncomeAndExpensesModal from './../modals/IncomeAndExpensesModal';
+import IncomeAndExpensesList from './../components/list/IncomeAndExpensesList';
 
 class IncomeAndExpensePage extends React.Component {
   render () {

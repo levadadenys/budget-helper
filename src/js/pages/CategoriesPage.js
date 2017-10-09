@@ -3,11 +3,11 @@ import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import * as appActions from './../actions/appActions';
 
-import ContainerFluid from '../components/bootstrapComponents/ContainerFluid';
-import CategoriesList from '../components/list/CategoriesList';
-import CategoryModal from '../modals/CategoryModal';
-import Sidebar from '../components/Sidebar';
-import ModalToggleButton from '../modals/ModalToggleButton';
+import ContainerFluid from './../components/bootstrapComponents/ContainerFluid';
+import CategoriesList from './../components/list/CategoriesList';
+import CategoryModal from './../modals/CategoryModal';
+import Sidebar from './../components/Sidebar';
+import ModalToggleButton from './../modals/ModalToggleButton';
 
 class CategoriesPage extends React.Component {
   render () {
