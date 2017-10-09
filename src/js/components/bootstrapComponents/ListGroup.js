@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class ListGroup extends React.Component {
   static defaultProps = {
-    size: 'col-md-6 col-lg-offset-3',
+    size: 'col-md-6 col-xs-6 col-lg-offset-3',
     titleClassName: ''
   };
 

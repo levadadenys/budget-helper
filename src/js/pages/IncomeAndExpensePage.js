@@ -34,7 +34,7 @@ class IncomeAndExpensePage extends React.Component {
 
         <IncomeAndExpensesList title='Income'
                                className='income-list'
-                               size='col-md-4 col-md-offset-2'
+                               size='col-md-4 col-md-offset-2 col-xs-12'
                                items={this.props.incomeAndExpensesStore.income}
                                categories={this.props.categoriesStore}
                                onSave={this.props.actions.editIncome}

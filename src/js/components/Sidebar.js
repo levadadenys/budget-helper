@@ -11,7 +11,7 @@ class Sidebar extends React.Component {
 
   render () {
     return (
-      <Panel className="affix"
+      <Panel className={window.screen.width > 768 ? 'affix' : ''}
              title={<h1>Budget</h1>}>
         <h4>{this.props.locationTitle}</h4>
 

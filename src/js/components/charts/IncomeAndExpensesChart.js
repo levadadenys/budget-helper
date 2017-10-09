@@ -81,10 +81,12 @@ class IncomeAndExpensesChart extends React.Component {
     const DATA = this.state.chartsData;
     let colors = this.props.colors.slice();
     return (
-      <div className='col-md-10 col-md-offset-1' style={{'height': 'initial'}}>
+      <div className='col-md-10 col-md-offset-1 col-xs-12'
+           style={{'height': 'initial'}}>
         <h4 className={this.props.titleClassName}>
           <strong>{this.props.title}</strong></h4>
-        <ResponsiveContainer debounce={400} aspect={4}>
+        <ResponsiveContainer debounce={400}
+                             aspect={window.screen.width > 576 ? 4 : 1}>
           <BarChart data={DATA}
                     marging={{top: 5, right: 30, left: 20, bottom: 5}}>
             <XAxis dataKey="name" />

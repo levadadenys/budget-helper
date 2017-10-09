@@ -8,7 +8,7 @@ class IncomeAndExpensesList extends React.Component {
     categories: [],
     title: '',
     className: '',
-    size: 'col-md-4',
+    size: 'col-md-4 col-xs-12',
 
     onSave: () => null,
     onDelete: () => null

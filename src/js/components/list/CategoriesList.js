@@ -11,7 +11,7 @@ class CategoriesList extends React.Component {
 
   render () {
     return (
-      <ListGroup title='Categories' size='col-md-4 col-lg-offset-4'>
+      <ListGroup title='Categories' size='col-md-4 col-xs-12 col-lg-offset-4'>
         {
           this.props.categories.map(category =>
             <CategoriesListItem key={category.id} onSave={this.props.onSave}

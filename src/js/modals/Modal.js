@@ -21,9 +21,10 @@ class Modal extends React.Component {
               <h4 className="modal-title"
                   id={`${this.props.id}-label`}>{this.props.modalTitle}</h4>
             </div>
-            <div className="modal-body ">
+            <div className="modal-body">
               <div className="row">
-                <div className="col-md-10 col-md-offset-1">
+                <div
+                  className="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1">
                   {
                     this.props.children
                   }
@@ -32,8 +33,9 @@ class Modal extends React.Component {
             </div>
             <div className='modal-footer'>
               <div className='row'>
-                <div className='col-md-2 col-md-offset-10'>
-                  <button type='button' className='btn btn-primary' data-dismiss="modal"
+                <div className='col-md-2 col-md-offset-10 col-xs-2 col-xs-offset-9'>
+                  <button type='button' className='btn btn-primary'
+                          data-dismiss="modal"
                           onClick={this.props.onClick}>
                     Save
                   </button>

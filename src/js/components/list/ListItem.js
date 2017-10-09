@@ -21,14 +21,14 @@ class ListItem extends React.Component {
     return (
       <ListGroupItem>
         <Row>
-          <div className="col-md-11">
+          <div className="col-md-11 col-xs-10">
             <div className="pull-left">
 
               {this.props.children}
 
             </div>
           </div>
-          <div className="col-md-1">
+          <div className="col-md-1 col-xs-2">
             {
               this.props.isEditing ? <div>
                 <Row>
